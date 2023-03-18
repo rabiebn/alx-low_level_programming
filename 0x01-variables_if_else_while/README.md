@@ -1,0 +1,20 @@
+total 200
+-rwxr--r-- 1 root root   357 Mar 17 14:02 0-positive_or_negative.c
+-rwxr--r-- 1 root root   475 Mar 17 16:23 1-last_digit.c
+-rwxr--r-- 1 root root   218 Mar 17 16:26 2-print_alphabet.c
+-rwxr--r-- 1 root root   338 Mar 17 17:22 3-print_alphabets.c
+-rwxr--r-- 1 root root   241 Mar 17 16:38 4-print_alphabt.c
+-rwxr--r-- 1 root root   192 Mar 17 16:34 5-print_numbers.c
+-rwxr--r-- 1 root root   192 Mar 17 17:50 6-print_numberz.c
+-rwxr--r-- 1 root root   217 Mar 17 17:48 7-print_tebahpla.c
+-rwxr--r-- 1 root root   327 Mar 17 17:42 8-print_base16.c
+-rwxr--r-- 1 root root   353 Mar 17 17:41 9-print_comb.c
+-rwxr-xr-x 1 root root 16712 Mar 17 15:44 alphabet
+-rwxr-xr-x 1 root root 16704 Mar 17 17:41 comb
+-rwxr-xr-x 1 root root 16816 Mar 17 15:45 lastdigit
+-rwxr-xr-x 1 root root 16712 Mar 17 17:50 numberz
+-rwxr-xr-x 1 root root 16704 Mar 17 17:35 omb
+-rwxr-xr-x 1 root root 16712 Mar 17 17:06 print_base16
+-rwxr-xr-x 1 root root 16712 Mar 17 17:43 printBase16
+-rw-r--r-- 1 root root     0 Mar 17 17:52 README.md
+-rwxr-xr-x 1 root root 16712 Mar 17 17:47 tebahpla
