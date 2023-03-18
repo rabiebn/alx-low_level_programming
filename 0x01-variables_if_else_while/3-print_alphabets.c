@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- *main - using putchar only, prints a to z both uppercase and lower case
+ * main - using putchar only, prints a to z both uppercase and lower case
  *
- *Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char myChar;
+	char c;
 
-	for (myChar = 'a'; myChar <= 'z'; ++myChar)
+	for (c = 'a'; c <= 'z'; ++c)
 	{
-		putchar(myChar);
+		putchar(c);
 	}
-	for (myChar = 'A'; myChar <= 'Z'; ++myChar)
+	for (c = 'A'; c <= 'Z'; ++c)
 	{
-		putchar(myChar);
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);

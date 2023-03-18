@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - using putchar only, prints a to z both uppercase and lower case
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char myChar;
+	char c;
 
-	for (myChar = 'a'; myChar <= 'z'; ++myChar)
+	for (c = 'a'; c <= 'z'; ++c)
 	{
-		putchar(myChar);
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
