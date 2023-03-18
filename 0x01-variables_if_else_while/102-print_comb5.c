@@ -21,19 +21,24 @@ int main(void)
 			{
 				for (o = ones; o <= '9'; o++)
 				{
-					putchar(tens);
-					putchar(ones);
-					putchar(' ');
-					putchar(t);
-					putchar(o);
-					if (!((tens == '9' && ones == '8') &&
-						(t == '9' && o == '9')))
+					if ((tens == t && ones == o) && (tens == o && ones == t))
+					{
+						continue;
+					}
+					else
+					{
+						putchar(tens);
+						putchar(ones);
+						putchar(' ');
+						putchar(t);
+						putchar(o);
+					}
+					if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				o = '0';
 			}
 		}
 	}
