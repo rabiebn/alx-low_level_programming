@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (o = ones; o <= '9'; o++)
 				{
-					if ((tens == t && ones == o) && (tens == o && ones == t))
+					if (tens == t && ones == o)
 					{
 						continue;
 					}
