@@ -10,34 +10,22 @@ int main(void)
 {
 	int tens;
 	int ones;
-	int t;
-	int o;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
+	for (tens = 0; tens < 100; tens++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		for (ones = 0; ones < 100; ones++)
 		{
-			for (t = tens; t <= '9'; t++) /*print second of pair*/
+			if (n < m)
 			{
-				for (o = ones; o <= '9'; o++)
+				putchar((n / 10) + 48);
+				putchar((n % 10) + 48);
+				putchar(' ');
+				putchar((m / 10) + 48);
+				putchar((m % 10) + 48);
+				if (n != 98 || m != 99)
 				{
-					if (tens == t && ones == o)
-					{
-						continue;
-					}
-					else
-					{
-						putchar(tens);
-						putchar(ones);
-						putchar(' ');
-						putchar(t);
-						putchar(o);
-					}
-					if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
