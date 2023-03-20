@@ -15,14 +15,14 @@ int main(void)
 	{
 		for (ones = 0; ones < 100; ones++)
 		{
-			if (n < m)
+			if (tens < ones)
 			{
-				putchar((n / 10) + 48);
-				putchar((n % 10) + 48);
+				putchar((tens / 10) + 48);
+				putchar((tens % 10) + 48);
 				putchar(' ');
-				putchar((m / 10) + 48);
-				putchar((m % 10) + 48);
-				if (n != 98 || m != 99)
+				putchar((ones / 10) + 48);
+				putchar((ones % 10) + 48);
+				if (tens != 98 || ones != 99)
 				{
 					putchar(',');
 					putchar(' ');
