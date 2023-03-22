@@ -86,7 +86,8 @@ void times_table(void);
 
 /**
  * add - adds two integers
- *
+ * @a: two integer arguments
+ * @b: two integer arguments
  * Return: sum
  */
  
@@ -96,8 +97,7 @@ int add(int, int);
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
- *
- * Return: void
+ * @n: integer argument
  */
 
 void print_to_98(int);
