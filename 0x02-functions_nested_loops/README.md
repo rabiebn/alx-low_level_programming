@@ -1,5 +1,37 @@
-0-putchar.c
-1-alphabet.c
-main.c
-putchar
-README.md
+total 316
+-rwxr-xr-x 1 root root 16768 Mar 22 06:01 0-putchar
+-rw-r--r-- 1 root root   273 Mar 22 06:01 0-putchar.c
+-rw-r--r-- 1 root root   116 Mar 22 12:53 10-add.c
+-rwxr-xr-x 1 root root 16936 Mar 22 14:57 11-98
+-rw-r--r-- 1 root root   259 Mar 22 13:08 11-main.c
+-rw-r--r-- 1 root root   305 Mar 22 14:56 11-print_to_98.c
+-rwxr-xr-x 1 root root 16840 Mar 22 06:10 1-alphabet
+-rw-r--r-- 1 root root   242 Mar 22 06:35 1-alphabet.c
+-rw-r--r-- 1 root root   137 Mar 22 06:22 2-main.c
+-rw-r--r-- 1 root root   297 Mar 22 06:35 2-print_alphabet_x10.c
+-rwxr-xr-x 1 root root 16832 Mar 22 07:09 3-islower
+-rw-r--r-- 1 root root   220 Mar 22 07:07 3-islower.c
+-rw-r--r-- 1 root root   287 Mar 22 07:08 3-main.c
+-rwxr-xr-x 1 root root 16832 Mar 22 07:29 4-isalpha
+-rw-r--r-- 1 root root   235 Mar 22 07:29 4-isalpha.c
+-rw-r--r-- 1 root root   314 Mar 22 07:22 4-main.c
+-rw-r--r-- 1 root root   497 Mar 22 07:58 5-main.c
+-rwxr-xr-x 1 root root 16832 Mar 22 07:58 5-sign
+-rw-r--r-- 1 root root   313 Mar 22 07:53 5-sign.c
+-rwxr-xr-x 1 root root 16872 Mar 22 08:22 6-abs
+-rw-r--r-- 1 root root   170 Mar 22 08:22 6-abs.c
+-rw-r--r-- 1 root root   316 Mar 22 08:20 6-main.c
+-rwxr-xr-x 1 root root 16856 Mar 22 08:55 7-last_digit
+-rw-r--r-- 1 root root   289 Mar 22 08:42 7-main.c
+-rw-r--r-- 1 root root   282 Mar 22 08:55 7-print_last_digit.c
+-rwxr-xr-x 1 root root 16840 Mar 22 11:58 8-24
+-rw-r--r-- 1 root root   553 Mar 22 12:00 8-24_hours.c
+-rw-r--r-- 1 root root   146 Mar 22 11:56 8-main.c
+-rw-r--r-- 1 root root   141 Mar 22 12:14 9-main.c
+-rwxr-xr-x 1 root root 16840 Mar 22 12:42 9-times_table
+-rw-r--r-- 1 root root   601 Mar 22 12:42 9-times_table.c
+-rw-r--r-- 1 root root   150 Mar 21 15:42 main.c
+-rw-r--r-- 1 root root  1587 Mar 22 14:28 main.h
+-rwxr-xr-x 1 root root 16704 Mar 21 16:35 putchar
+-rw-r--r-- 1 root root   247 Mar 22 06:08 _putchar.c
+-rw-r--r-- 1 root root     0 Mar 22 14:57 README.md
