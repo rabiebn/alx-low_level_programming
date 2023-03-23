@@ -7,19 +7,21 @@
 
 int main(void)
 {
-	double sum = 0;
-	long a = 1;
-	long b = 2;
-	
+	int sum_of_evens = 0;
+	int a;
+	int b;
+	int sum = 1;
+
+	a = 1;
+	b = 2;
 	while (b < 4000000)
 	{
-		if (a % 2 == 0)
-			sum += a;
-		if (b % 2 == 0)
-			sum += b;
-		a += b;
-		b += a;
+		sum = a + b;
+		a = b;
+		b = sum;
+		if ((sum <= 4000000) && (sum % 2 == 0))
+			sum_of_evens += sum;
 	}
-	printf("%.0lf\n", sum);
+	printf("%d\n", sum_of_evens);
 	return (0);
 }

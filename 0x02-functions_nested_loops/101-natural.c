@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	double sum;
+	int sum;
 
 	sum = 0;
 	while (i < 1024)
@@ -20,5 +20,5 @@ int main(void)
 		}
 		++i;
 	}
-	printf("%.0lf\n", sum);
+	printf("%d\n", sum);
 }

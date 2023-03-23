@@ -9,12 +9,12 @@
 int main(void)
 {
 	int i;
-	double a = 1;
-	double b = 2;
+	long a = 1;
+	long b = 2;
 
 	for (i = 0; i < 25; i++)
 	{
-		printf("%.0lf, %.0lf, ", a, b);
+		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
 	}
