@@ -12,11 +12,12 @@ int main(void)
 	long a = 1;
 	long b = 2;
 
+	printf("%li, %li", a, b);
 	for (i = 0; i < 25; i++)
 	{
-		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
+		printf(", %li, %li", a, b);
 	}
 	printf("\n");
 	return (0);
