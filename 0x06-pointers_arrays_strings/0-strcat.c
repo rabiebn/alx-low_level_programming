@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a function
- * @s: pointer to a string
- * Return: length of the string
- */
-
-int _strlen(char *s)
-{
-	int counter = 0;
-
-	while (s[counter] != 0)
-		counter++;
-
-	return (counter);
-}
-
-/**
  * _strcat - concatenates two strings
  * @src: string
  * @dest: string appended to
@@ -25,13 +9,17 @@ int _strlen(char *s)
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int lenDest = _strlen(dest);
+	int i = 0, j = 0;
 
-	while (i <= lenSrc - 1)
-	{
-		dest[lenDest + i] = src[i];
+	while (dest[i] != '\0')
 		i++;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[i];
+		i++, j++;
 	}
+	dest[i] = '\0';
+
 	return (dest);
 }

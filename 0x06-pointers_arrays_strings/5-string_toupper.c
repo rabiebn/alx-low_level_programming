@@ -6,7 +6,7 @@
  * Return: string with all letters capitalized
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i;
 
