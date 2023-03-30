@@ -91,4 +91,14 @@ char *cap_string(char *s);
 
 char *leet(char *s);
 
+/**
+ * rot13 - encodes a string using rot13
+ * @s: string
+ * Return: string in rot13
+ */
+
+char *rot13(char *s);
+
+
+
 #endif
