@@ -99,6 +99,13 @@ char *leet(char *s);
 
 char *rot13(char *s);
 
+/**
+ * print_number - prints an integer
+ * @n: integer
+ */
+
+void print_number(int n);
+
 
 
 #endif
