@@ -8,7 +8,7 @@
 void print_number(int n)
 {
 	unsigned int tens, digit, intPos = n;
-	unsigned int digitNum = 1;
+	double digitNum = 1;
 
 	if (n == 0)
 		_putchar('0');

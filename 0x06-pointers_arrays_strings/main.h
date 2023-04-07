@@ -106,6 +106,17 @@ char *rot13(char *s);
 
 void print_number(int n);
 
+/**
+ *  * infinite_add - adds two numbers
+ *   * @n1: string of digits
+ *    * @n2: string of digits
+ *     * @r: pointer to store the result
+ *      * @size_r: integer r size
+ *       * Return: pointer to the sum, 0 if the sum can not be stored in r
+ *        */
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
 
 
 #endif
