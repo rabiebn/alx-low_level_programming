@@ -18,18 +18,18 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	while(argc--)
+	while(--argc)
 	{
-		for (i = 0; *(*argv + i) != '\0' ; i++)
+		for (i = 0; *(*(argv + argc) + i) != '\0' ; i++)
 		{
-			if (isdigit(*(*argv + i)) == 0 )
+			if (isdigit(*(*(argv + argc) + i)) == 0 )
 			{
+				printf("%c\n", *(*(argv + argc) + i + 1));
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(*argv);
-		argv++;
+		sum += atoi(*(argv + argc));
 	}
 	printf("%d\n", sum);
 
