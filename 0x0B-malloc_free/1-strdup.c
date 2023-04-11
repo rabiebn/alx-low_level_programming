@@ -2,6 +2,22 @@
 #include "main.h"
 
 /**
+ * _strlen - length of a string
+ * @s: string
+ * Return:len of s
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (*(s + i) != '\0')
+		i++;
+
+	return (i);
+}
+
+/**
  * _strdup - returns a pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter
  * @str: string
@@ -12,21 +28,22 @@
 char *_strdup(char *str)
 {
 	char *p;
-	int i = 0;
+	int len, i = 0;
 
 	if (str == NULL)
 		return (NULL);
 
+	len = _strlen(str);
+	p = (char *)malloc(len);
+
 	if (p == NULL)
 		return (NULL);
 
-	while (*(str + i) != '\0')
+	while (i <= len)
 	{
-		p + i = (char *)malloc(sizeof(char));
 		*(p + i) = *(str + i);
 		i++;
 	}
-	*(p + i) = *(str + i);
 
 	return (p);
 }
