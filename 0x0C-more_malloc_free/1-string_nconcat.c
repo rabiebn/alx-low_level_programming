@@ -2,6 +2,22 @@
 #include "main.h"
 
 /**
+ * _strlen - calculate and return string length
+ * @string: string
+ * Return: string length
+ */
+
+int _strlen(char *string)
+{
+	int i = 0;
+
+	while (string[i] != '\0')
+		i++;
+
+	return (i);
+}
+
+/**
  * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
@@ -12,37 +28,33 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat = malloc(sizeof(*s1) + n);
-	unsigned int len2 = 0, i = 0, j = 0;
+	char *concat;
+	unsigned int num, len2 = 0, j = 0;
+	int i = 0;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	concat = malloc(sizeof(*concat) * (_strlen(s1) + n + 1));
 
 	if (concat == NULL)
 		return (NULL);
 
-	while (*(s1 + i) != '\0')
+	while (i < _strlen(s1))
 	{
 		*(concat + i) = *(s1 + i);
 		i++;
 	}
-	while (*s2)
-	{
-		s2++;
-		len2++;
-	}
+
+	len2 = _strlen(s2);
+	num = n;
 	if (n >= len2)
+		num = _strlen(s2);
+	while (j < num)
 	{
-		while (j < len2)
-		{
-			*(concat + i + j) = *(s2 + j);
-			j++;
-		}
-	}
-	else
-	{
-		while (j < n)
-		{
-			*(concat + i + j) = *(s2 + j);
-			j++;
-		}
+		*(concat + i + j) = *(s2 + j);
+		j++;
 	}
 	*(concat + i + j) = '\0';
 
