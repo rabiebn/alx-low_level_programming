@@ -45,9 +45,10 @@ char *strcopy(char *from, char *to)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog;
-	char *copy_name, copy_owner;
+	char *copy_name;
+	char *copy_owner;
 
-	newDog = (dog_t *)malloc(sizeof(dog_t));
+	newDog = malloc(sizeof(dog_t));
 	if (newDog == NULL)
 		return (NULL);
 
@@ -55,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name != NULL)
 	{
-		copy_name = (char *)malloc(_strlen(name) + 1);
+		copy_name = malloc(_strlen(name) + 1);
 		if (copy_name == NULL)
 		{
 			free(newDog);
@@ -68,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (owner != NULL)
 	{
-		copy_owner = (char *)malloc(_strlen(owner) + 1);
+		copy_owner = malloc(_strlen(owner) + 1);
 		if (copy_owner == NULL)
 		{
 			free(newDog);
