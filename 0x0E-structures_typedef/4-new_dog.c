@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strcopy - copies string
+ * strcopy - copies string
  * @from: string to copy
  * @to: the copy
  * Return: copy of the original string
@@ -52,7 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	newDog->age = age;
-	
+
 	if (name != NULL)
 	{
 		copy_name = (char *)malloc(_strlen(name) + 1);
@@ -65,7 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 		newDog->name = NULL;
-	
+
 	if (owner != NULL)
 	{
 		copy_owner = (char *)malloc(_strlen(owner) + 1);
