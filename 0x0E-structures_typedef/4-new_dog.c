@@ -28,8 +28,8 @@ char *strcopy(char *from, char *to)
 {
 	int i;
 
-	for (i = 0; i < _strlen(from); i++)
-		from[i] = to[i];
+	for (i = 0; i <= _strlen(from); i++)
+		to[i] = from[i];
 
 	return (to);
 }
