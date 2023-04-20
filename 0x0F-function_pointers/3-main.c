@@ -12,7 +12,6 @@
 int main(int ac, char **av)
 {
 	int n1, n2;
-	int (*f)(int, int);
 
 	if (ac != 4)
 	{
@@ -21,9 +20,9 @@ int main(int ac, char **av)
 	}
 	n1 = atoi(av[1]);
 	n2 = atoi(av[3]);
-	f = get_op_func(av[2]);
 
-	if (f == NULL || (av[2][1] != '\0'))
+	if (*av[2] != '+' && *av[2] != '-' && *av[2] != '*'
+			&& *av[2] != '/' && *av[2] != '%')
 	{
 		printf("Error\n");
 		exit(99);
@@ -34,7 +33,7 @@ int main(int ac, char **av)
 		exit(100);
 	}
 
-	printf("%d\n", f(n1, n2));
+	printf("%d\n", (*get_op_func(av[2]))(n1, n2));
 
 	return (0);
 }
