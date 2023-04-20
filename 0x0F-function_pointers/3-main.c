@@ -11,24 +11,30 @@
 
 int main(int ac, char **av)
 {
+	int n1, n2;
+	int (*f)(int, int);
+
 	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (*av[2] != '+' && *av[2] != '-' && *av[2] != '*'
-			&& *av[2] != '/' && *av[2] != '%')
+	n1 = atoi(av[1]);
+	n2 = atoi(av[3]);
+	f = get_op_func(av[2]);
+
+	if (f == NULL || (av[2][1] != '\0'))
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*av[2] == '/' || *av[2] == '%') && atoi(av[3]) == 0)
+	if ((*av[2] == '/' || *av[2] == '%') && n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", (*get_op_func(av[2]))(atoi(av[1]), atoi(av[3])));
+	printf("%d\n", f(n1, n2));
 
 	return (0);
 }
