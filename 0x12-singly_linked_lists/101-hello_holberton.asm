@@ -1,18 +1,26 @@
-global _start
+; File: 101-hello_holberton.asm
+; Auth: Rabie BENMER
+; Desc: 64-bit assembly program that prints
+;       Hello, Holberton followed by a new line.
+
+extern printf
 
 section .text
+   global main
 
-_start:
-  mov rax, 1        ; write(
-  mov rdi, 1        ;   STDOUT_FILENO,
-  mov rsi, msg      ;   "Hello, Holberton\n",
-  mov rdx, msglen   ;   sizeof("Hello, Holberton\n")
-  syscall           ; );
+main:
+   push rbp
 
-  mov rax, 60       ; exit(
-  mov rdi, 0        ;   EXIT_SUCCESS
-  syscall           ; );
+   mov rdi,fmt
+   mov rsi,msg
+   mov rax,0
+   call printf
 
-section .rodata
-  msg: db "Hello, Holberton", 10
-  msglen: equ $ - msg
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   fmt: db "%s", 10, 0
