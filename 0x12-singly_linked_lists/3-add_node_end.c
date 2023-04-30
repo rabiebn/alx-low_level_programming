@@ -5,7 +5,7 @@
  * @head: pointer to the current head of the list
  * @str: the string element of the new list_t node
  *
- * Return: address of the new node, NULL if it fails 
+ * Return: address of the new node, NULL if it fails
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -32,5 +32,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		tmp->next = new_node;
 	}
 
-	return(new_node);
+	return (new_node);
 }
