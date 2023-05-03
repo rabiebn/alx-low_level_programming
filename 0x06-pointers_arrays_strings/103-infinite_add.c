@@ -8,7 +8,6 @@
  * @size_r: integer r size
  * Return: pointer to the sum, 0 if the sum can not be stored in r
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, j, n;
