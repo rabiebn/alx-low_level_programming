@@ -3,34 +3,33 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an int
+ * _atoi - Converts a string to an int
  * @s: string to convert
- *
- * Return: converted int, 0 if string has no digits
+ * Return: returns converted int, returns 0 if no digits are found
  */
 int _atoi(char *s)
 {
-	int i, neg, num;
-
+	int num, i, neg;
 	i = 0;
 	num = 0;
-	neg = 1;
+	neg = -1;
 
 	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
+	{
+		if (s[i] == '-')
+			neg *= -1;
 		i++;
-	if (s[i] == '-')
-		neg *= -1;
-
+	}
 	while (s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'))
-		num = (num * 10) + (s[i++] - '0');
-
+		num = (num * 10) - (s[i++] - '0');
 	return (num * neg);
 }
+
 /**
- * main - multiplies two positive numbers
- * @argc: len of argv
+ * main - multiplies two numbers
+ * @argc: lenght of argv
  * @argv: args passed in the command line
- * Return: 0 on success
+ * Return: 0 on Success
  */
 int main(int argc, char *argv[])
 {
