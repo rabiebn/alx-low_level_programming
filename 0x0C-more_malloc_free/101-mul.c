@@ -10,6 +10,7 @@
 int _atoi(char *s)
 {
 	int num, i, neg;
+
 	i = 0;
 	num = 0;
 	neg = -1;
