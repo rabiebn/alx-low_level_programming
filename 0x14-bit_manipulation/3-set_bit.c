@@ -11,7 +11,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int mask = 1 << index;
 
-	if (!n || index >= (sizeof(long unsigned int) * 8))
+	if (!n || index >= (sizeof(unsigned long int) * 8))
 		return (-1);
 
 	*n = *n | mask;
