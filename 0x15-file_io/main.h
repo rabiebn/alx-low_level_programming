@@ -22,5 +22,15 @@
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
-
+/* elf printint functions */
+void print_data(Elf64_Ehdr *e);
+void print_version(Elf64_Ehdr *e);
+void print_osabi(Elf64_Ehdr *e);
+void print_magic_number(unsigned char *e_ident);
+void print_class(unsigned char *e_ident);
+void print_entry(void *elf_header);
+void print_all(Elf64_Ehdr *ehdr, int fd);
+void iself(unsigned char *e_ident);
+void print_abiversion(int fd);
+void print_type(uint16_t e_type);
 #endif
