@@ -8,7 +8,8 @@
  * Return: address of the element at the n-th node,
  *         or NULL if node does not exists.
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index){
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+{
 	dlistint_t *tmp;
 
 	if (!head)
@@ -45,7 +46,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		{
 			free(*head);
 			*head = NULL;
-			return (1);	
+			return (1);
 		}
 
 		(*head)->next->prev = NULL;

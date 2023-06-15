@@ -6,7 +6,7 @@
  * @index: index of the node.
  *
  * Return: address of the element at the n-th node,
- * 	   or NULL if node does not exists.
+ *         or NULL if node does not exists.
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {

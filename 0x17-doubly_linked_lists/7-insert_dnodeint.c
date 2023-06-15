@@ -8,7 +8,8 @@
  * Return: address of the element at the n-th node,
  *         or NULL if node does not exists.
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index){
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+{
 	dlistint_t *tmp;
 
 	if (!head)
@@ -28,7 +29,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index){
 
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position
- * 			      in a dlistint_t list.
+ *                            in a dlistint_t list.
  * @h: head of the list;
  * @idx: index where the new node should be added;
  * @n: data of the new node.
@@ -45,7 +46,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	tmp = get_dnodeint_at_index(*h, idx);
 	if (!tmp)
 		return (NULL);
-	
+
 	new_node = malloc(sizeof(dlistint_t));
 	if (!new_node)
 		return (NULL);
