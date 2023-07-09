@@ -12,10 +12,8 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 
 	if (!ht)
-	{
-		printf("{}\n");
 		return;
-	}
+
 	node = ht->array[i];
 	while (!node && (i < ht->size)) /* get the first not empty node */
 		node = ht->array[i++];
