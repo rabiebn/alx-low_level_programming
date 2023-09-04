@@ -15,4 +15,4 @@
 
 ---
 ### Authors
-Rabie BENMER [![M](https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg)](https://twitter.com/WhiteHendrix5)
+[Rabie BENMER](https://twitter.com/WhiteHendrix5)
